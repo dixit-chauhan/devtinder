@@ -40,3 +40,6 @@
 - app.use() vs app.all()    
 - Error Handling
   - app.use('/', (err, req, res, next) => {})
+- Connect your application to database
+- Create a User Schema & Model
+- Saving data into database using user.save();
