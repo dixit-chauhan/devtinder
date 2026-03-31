@@ -38,3 +38,5 @@
     - Route handlers can be wrapped inside array & in any order
     - GET /user => chain of middlerware => request handler
 - app.use() vs app.all()    
+- Error Handling
+  - app.use('/', (err, req, res, next)
