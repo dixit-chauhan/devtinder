@@ -43,3 +43,6 @@
 - Connect your application to database
 - Create a User Schema & Model
 - Saving data into database using user.save();
+- How to read JSON data in express?
+  - Use middleware
+  - app.use(express.json());
