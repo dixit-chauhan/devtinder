@@ -46,3 +46,5 @@
 - How to read JSON data in express?
   - Use middleware
   - app.use(express.json());
+- Reading data from database
+  - Using find vs findOne with & without filter
