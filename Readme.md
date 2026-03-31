@@ -49,4 +49,6 @@
 - Reading data from database
   - Using find vs findOne with & without filter
 - Deleting data from database
-  - findByIdAndDelete
+  - User.findByIdAndDelete(userId)
+- Updating data 
+  - findByIdAndUpdate(userId, data)
