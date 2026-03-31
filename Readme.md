@@ -39,4 +39,4 @@
     - GET /user => chain of middlerware => request handler
 - app.use() vs app.all()    
 - Error Handling
-  - app.use('/', (err, req, res, next)
+  - app.use('/', (err, req, res, next) => {})
