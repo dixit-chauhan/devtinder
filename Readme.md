@@ -47,8 +47,11 @@
   - Use middleware
   - app.use(express.json());
 - Reading data from database
-  - Using find vs findOne with & without filter
+  - find()
+  - findOne({ emailId: emailId })
 - Deleting data from database
-  - User.findByIdAndDelete(userId)
+  - findByIdAndDelete(userId)
+  - findOneAndDelete({ emailId: emailId })
 - Updating data 
   - findByIdAndUpdate(userId, data)
+  - findOneAndUpdate({ emailId: emailId }, data)

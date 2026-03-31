@@ -40,8 +40,10 @@ app.get('/user', async (req, res) => {
 
 app.delete('/user', async (req, res) => {
     const userId = req.body.userId;
+    const emailId = req.body.emailId;
     try {
-        const user = await User.findByIdAndDelete(userId);
+        // await User.findByIdAndDelete(userId);
+        await User.findOneAndDelete({ emailId: emailId });
         res.send("User deleted successfully.");
     } catch (err) {
         res.status(400).send("Something went wrong");
@@ -51,8 +53,10 @@ app.delete('/user', async (req, res) => {
 app.patch('/user', async (req, res) => {
     const data = req.body;
     const userId = req.body.userId;
+    const emailId = req.body.emailId;
     try {
-        await User.findByIdAndUpdate(userId, data);
+        // await User.findByIdAndUpdate(userId, data);
+        await User.findOneAndUpdate({ emailId: emailId }, data);
         res.send("User updated successfully.");
     } catch (err) {
         res.status(400).send("Something went wrong");
