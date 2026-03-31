@@ -5,9 +5,4 @@ const connectDB = async () => {
     await mongoose.connect(DB_ENDPOINT);
 }
 
-connectDB().
-    then(() => {
-        console.log("DB connection established.");
-    }).catch((err) => {
-        console.log("DB connection cannot be established.", err);
-    });
+module.exports = { connectDB };
